@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.linear_model import LogisticRegression
  
-with open(r"vect and model path", 'rb') as f_in:
+with open(r"C:\Users\Abdullahi Mujaheed\Desktop\mlzoom\mlzoomcamp\models.bin", 'rb') as f_in:
     vect, model = pkl.load(f_in)
 
 app = Flask('first_deploy')

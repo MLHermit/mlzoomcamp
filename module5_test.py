@@ -7,7 +7,7 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-with open(r'C:\Users\Abdullahi Mujaheed\Desktop\mlzoom\mlzoomcamp\models.bin', 'rb') as f_out:
+with open(r'C:\Users\Abdullahi Mujaheed\Desktop\mlzoom\mlzoomcamp\pipleine.bin', 'rb') as f_out:
     dv, model = pkl.load(f_out)
 
 class InputData(BaseModel):
